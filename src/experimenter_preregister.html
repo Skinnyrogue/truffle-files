@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Preregister Experiment</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/modules/bootstrap.min.js"></script>
+    <script src="js/modules/web3.min.js"></script>
+    <script src="js/modules/truffle-contract.js"></script>
+    <!-- The necessary init functions -->
+    <script src="js/initialize.js"></script>
+    <!-- For user selection -->
+    <script src="js/experimenter_preregister.js"></script>
+</head>
+
+<body>
+
+  <h1>Preregister a new study</h1><hr><br><br><br><br>
+  <input id="input_url" type="text" placeholder="URL">
+  <input id="input_hash" type="text" placeholder="SHA256 Hash">
+  <input id="input_title" type="text" placeholder="Title">
+  <input id="input_deadline" type="text" placeholder="Deadline">
+  <input id="input_orcid" type="text" placeholder="ORCID-ID">
+
+  <button id="button" name="button">Insert Preregistration</button>
+  <pre id="output"></pre>
+  <br><br><br><hr>
+  <form action="experimenter_dashboard.html">
+    <input type="submit" value="Back to Dashboard"/>
+  </form>
+
+</body>
+</html>

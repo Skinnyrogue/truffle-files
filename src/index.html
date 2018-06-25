@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Select Role</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/modules/bootstrap.min.js"></script>
+    <script src="js/modules/web3.min.js"></script>
+    <script src="js/modules/truffle-contract.js"></script>
+    <!-- The necessary init functions -->
+    <script src="js/initialize.js"></script>
+    <!-- The JS of this file -->
+    <script src="js/index.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <h2>Role Selection</h2><br>
+  <button id="button_experimenter" class="float-left submit-button">Set Experimenter</button>
+  <button id="button_reviewer" class="float-left submit-button">Set Reviewer</button>
+  <button id="button_editor" class="float-left submit-button">Set Editor</button>
+
+  <br><br>
+
+  <form>
+    <select id="users" onchange="selectedUser()">
+      <option value="Select account">Select account</option>
+    </select>
+  <pre id="selectedaccount"></pre>
+  </form>
+  <br>
+  <pre id="output"><h3>Selected account roles: </h3></pre>
+
+  <h3>Blockchain Journal</h3><br>
+  <form action="journal.html">
+    <input type="submit" value="Access Published Studies"/>
+  </form>
+  <br>
+
+</body>
+</html>
